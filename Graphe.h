@@ -17,8 +17,8 @@ public:
    Graphe(int);
    ~Graphe();
    void addEdge(int u, int v, int w);
-   std::vector<int> BFS(int start, int end);
-   std::vector<int> shortestPath(int src); // Algorithme de Dijkstra
+   std::pair<std::vector<int>, std::vector<int>> BFS(int start, int end);
+   pair<std::vector<int>, std::vector<int>> shortestPath(int src, int end); // Algorithme de Dijkstra
 };
 
 
